@@ -1,0 +1,23 @@
+{
+  "name": "dk-workflow",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "d": "bin/cli"
+  },
+  "author": "itkui<13452903663@163.com>",
+  "description": "个人快速开发工作流",
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "cli-spinners": "^2.6.0",
+    "commander": "^8.1.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.1.2",
+    "log-update": "^4.0.0",
+    "simple-git": "^2.45.1"
+  },
+  "dependencies": {
+    "jsonfile": "^6.1.0"
+  }
+}
