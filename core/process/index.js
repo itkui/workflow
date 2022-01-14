@@ -1,13 +1,13 @@
-const helpSet = require("./help");
-const versionSet = require("./version");
+const add = require("./add");
+const init = require("./init");
+const defaultCommand = require("./default");
 
-const configBind = (program) => {
-  // 设置版本信息
-  versionSet(program);
-  // 设置帮助信息
-  helpSet(program);
+const childBind = (process) => {
+  add(process);
+  init(process);
+  defaultCommand(process);
 };
 
 module.exports = {
-  configBind,
+  childBind,
 };
