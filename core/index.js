@@ -10,8 +10,12 @@ const run = () => {
   configBind(program);
   // 绑定所有子命令
   childBind(program);
-  // 初始化所有的选项
-  program.parse(process.argv);
+
+  figlet('w o r k f l o w', (err, data) => {
+    !err && console.log(chalk.red.bold(data), '\r\n', '');
+    // 初始化所有的选项
+    program.parse(process.argv);
+  });
 };
 
 module.exports = {

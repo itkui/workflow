@@ -1,11 +1,9 @@
-const add = require("./add");
-const init = require("./init");
-const defaultCommand = require("./default");
+const updateProgram = require("./update");
+const defaultProgram = require("./default");
 
-const childBind = (process) => {
-  add(process);
-  init(process);
-  defaultCommand(process);
+const childBind = (program) => {
+  updateProgram(program);
+  defaultProgram(program);
 };
 
 module.exports = {
